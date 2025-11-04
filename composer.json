@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "php": ">=8.2",
+        "php": ">=8.0",
         "doctrine/common": "^3.0",
         "doctrine/dbal": "^3.6.0",
         "doctrine/orm": "^2.8",
