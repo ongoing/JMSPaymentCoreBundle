@@ -27,7 +27,7 @@ use JMS\Payment\CoreBundle\Model\ExtendedDataInterface;
 
 class ExtendedDataType extends ObjectType
 {
-    final public const NAME = 'extended_payment_data';
+    public const NAME = 'extended_payment_data';
 
     private static ?EncryptionServiceInterface $encryptionService = null;
 
@@ -106,7 +106,7 @@ class ExtendedDataType extends ObjectType
         return self::NAME;
     }
 
-    public function requiresSQLCommentHint(AbstractPlatform $platform): true
+    public function requiresSQLCommentHint(AbstractPlatform $platform): bool
     {
         return true;
     }

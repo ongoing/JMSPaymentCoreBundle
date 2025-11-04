@@ -20,7 +20,7 @@ use InvalidArgumentException;
  */
 class Number
 {
-    final public const EPSILON = 1.0E-8;
+    public const EPSILON = 1.0E-8;
 
     public static function compare($float1, $float2, $comparison = null)
     {

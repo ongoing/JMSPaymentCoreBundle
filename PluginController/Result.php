@@ -28,10 +28,10 @@ use JMS\Payment\CoreBundle\Plugin\Exception\Exception as PluginException;
 
 class Result
 {
-    final public const STATUS_FAILED = 1;
-    final public const STATUS_PENDING = 2;
-    final public const STATUS_SUCCESS = 3;
-    final public const STATUS_UNKNOWN = 4;
+    public const STATUS_FAILED = 1;
+    public const STATUS_PENDING = 2;
+    public const STATUS_SUCCESS = 3;
+    public const STATUS_UNKNOWN = 4;
 
     /**
      * @var CreditInterface|null

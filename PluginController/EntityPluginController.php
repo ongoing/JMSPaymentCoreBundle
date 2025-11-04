@@ -372,7 +372,10 @@ class EntityPluginController extends PluginController
         return $paymentInstruction;
     }
 
-    protected function doRollback(\Exception $failure): never
+    /**
+     * @return never
+     */
+    protected function doRollback(\Exception $failure)
     {
         $this->entityManager->getConnection()->rollback();
 
